@@ -10,6 +10,8 @@ This git repository is a solution to the topic proposed during the Airbus Helico
 
 **Authors :** Eliott CRANCEE, Cléa HAN, Yanis LABEYRIE, Léa TRIQUET, Adrien ZABBAN.
 
+**Model explanation :** If you understand French, you can refer to the two-page report titled "Rapport" for more details.
+
 ---
 
 ## Installation Guide :
