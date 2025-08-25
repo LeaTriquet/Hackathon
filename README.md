@@ -6,17 +6,16 @@
 [![Black_logo](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 ---
-This git repository is a solution to the topic proposed during the Airbus Helicopter hackathon from Thursday 22 February 2024 to Wednesday 28 February 2024. The task is as follows: Automate the summarization of short specialized texts in the legal field. 
-The team consists of Eliott, Cléa Han, Yanis Labeyrie, Léa Triquet, Adrien Zabban. Our team name is Hackatsuki.
+This git repository is a solution to the topic proposed during the Airbus Helicopter hackathon from Thursday 22 February 2024 to Wednesday 28 February 2024. The task is as follows: Automate the summarization of short specialized texts in the legal field.
+
+**Authors :** Eliott CRANCEE, Cléa HAN, Yanis LABEYRIE, Léa TRIQUET, Adrien ZABBAN.
 
 ---
 
-## Task example :
-**Original text for summary:** The Seller shall be responsible for loss of and damage to the Customer’s property, except the Customer’s Training Means, and to the Seller’s personnel, at all times while at the Customer’s facilities, except in cases of gross negligence or wilful misconduct of the Customer. In this case, the Customer shall remain responsible for any damage to its Training Means and its personnel, including the personnel involved in the Training flights.
-
-**Summary:** Except in case of gross negligence or wilful misconduct, the Seller is responsible for damages caused to the Customer\u2019s property. The Seller is however not responsible for damages to the Customer\u2019s Training Means and the Seller\u2019s personnel.
-
 ## Installation Guide :
+
+### Disclaimer
+You won’t be able to run the code because I deleted all the data that were Airbus’s property.
 
 ### Installation Requirements
 To run the code you need python (We use python 3.10.11) and packages that are indicated in [`requirements.txt`](requirements.txt).
@@ -40,9 +39,10 @@ Create a directory named for the weights :
 mkdir models_weight
 cd models_weight
 git lfs install
-git clone https://huggingface.co/mixtralyanis/flant5 t5_weight
-git clone https://huggingface.co/google/gemma-7b-it gemma_weight
+git clone https://huggingface.co/****************
+git clone https://huggingface.co/***************
 ```
+*weights are confidentials too*
 
 ## Run the code :
 
@@ -52,9 +52,9 @@ python run.py -g [gemma_weight] -t [t5_weight] -d [jsonfile] -u [use_llm] -o [ou
 
 **Here is a description of each parameter:**
 
--``[gemma_weight]``: This parameter specifies the weight for the Gemma model that will be used in the pipeline. Replace ``[gemma_weight]`` with the desired weights path. The path should be a string like ``".\models_weight\gemma_weight\"``.
+-``[gemma_weight]``: This parameter specifies the weight for the Gemma model that will be used in the pipeline. Replace ``[gemma_weight]`` with the desired weights path. The path should be a string.
 
--``[t5_weight]``: This parameter specifies the weight for the T5 model that will be used in the pipeline. Replace ``[t5_weight]`` with the desired weights path. The path should be a string like ``".\models_weight\t5_weight\"``.
+-``[t5_weight]``: This parameter specifies the weight for the T5 model that will be used in the pipeline. Replace ``[t5_weight]`` with the desired weights path. The path should be a string.
 
 -``[jsonfile] ``: This parameter specifies the path to the JSON file that contains the data to be summarized. Replace ``[jsonfile]`` with the path to your JSON file. It should be a string like ``".\data\original_data\airbus_helicopters_test_set.json"``.
 
@@ -103,3 +103,7 @@ Folder given to us by airbus to evaluate the metrics of the summaries generated
 
 **Folder `ressources` :**
 Folder containing list of resources such as deliverables or evaluation criteria
+
+---
+## Clone
+This Git repository is a clone of the original project. The original contains all the data and model weights, so it is private and you won’t be able to find it.
